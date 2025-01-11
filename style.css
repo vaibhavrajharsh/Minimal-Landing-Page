@@ -7,6 +7,7 @@ html, body{
     height: 100%;
     width: 100%;
     font-family: monospace;
+    background-color: #ededed;  
 }
 
 main{
@@ -41,6 +42,11 @@ main{
     font-weight: 500;
     color: #333;
 }
+
+.left-top-right img{
+    width: 50px;
+   opacity: 0;
+ }
 
 .left-centre{
     
@@ -95,14 +101,15 @@ main{
  
 }
 
-.arrow{
-    height: 80px;
-    width: 80px;
+.arrow img{
+    width: 50px;
+    padding: 20px;
+    filter: invert();
     border-radius: 50%;
-    background-color: orangered;
+    background-color: rgb(0, 140, 255);
     position: absolute;
-    right: 47%;
-    top: 45%;
+    right: 46.5%;
+    top: 44%;
 }
 
 @media (max-width:600px) {
@@ -131,6 +138,14 @@ main{
         
     }
 
+    .left-top-right{
+        padding: 15px;
+     }
+
+    .left-top-right img{
+        opacity: 1;
+     }
+
     .left-top-right h3{
        display: none;
     }
@@ -143,8 +158,8 @@ main{
     .left-centre h1{
         font-size: 18vw;
         font-family: Helvetica, sans-serif;
-        font-weight: 400;
-        line-height: 22vw;
+        font-weight: 500;
+        line-height: 20vw;
     }
 
     .left-centre{
@@ -167,5 +182,9 @@ main{
 
     .left-top-left{
         padding: 20px;
+    }
+
+    .arrow{
+       display: none;
     }
 }
